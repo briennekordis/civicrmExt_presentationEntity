@@ -2,7 +2,7 @@
 <extension key="presentation" type="module">
   <file>presentation</file>
   <name>Presentation Entity</name>
-  <description>Custom entity for presenations</description>
+  <description>Custom entity for presentations</description>
   <license>AGPL-3.0</license>
   <maintainer>
     <author>Brienne Kordis</author>
