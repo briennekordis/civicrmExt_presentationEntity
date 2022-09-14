@@ -304,5 +304,11 @@ function _presentation_civix_fixNavigationMenuItems(&$nodes, &$maxNavID, $parent
  * @link https://docs.civicrm.org/dev/en/latest/hooks/hook_civicrm_entityTypes
  */
 function _presentation_civix_civicrm_entityTypes(&$entityTypes) {
-  $entityTypes = array_merge($entityTypes, []);
+  $entityTypes = array_merge($entityTypes, [
+    'CRM_Presentation_DAO_Presentation' => [
+      'name' => 'Presentation',
+      'class' => 'CRM_Presentation_DAO_Presentation',
+      'table' => 'civicrm_presentation',
+    ],
+  ]);
 }

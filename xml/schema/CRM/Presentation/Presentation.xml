@@ -24,7 +24,7 @@
   <field>
     <name>topic_id</name>
     <title>Topic</title>
-    <type>CheckBox</type>
+    <type>int</type>
     <html>
       <type>CheckBox</type>
     </html>
@@ -38,7 +38,7 @@
   <field>
     <name>title</name>
     <title>Title</title>
-    <type>Text</type>
+    <type>text</type>
     <html>
       <type>Text</type>
     </html>
@@ -48,8 +48,7 @@
   <field>
     <name>date</name>
     <title>Presentation date</title>
-    <type>Select Date</type>
-    <formatType>activityDate</formatType>
+    <type>date</type>
     <html>
       <type>Select Date</type>
     </html>
@@ -59,7 +58,7 @@
   <field>
     <name>audience_id</name>
     <title>Audience</title>
-    <type>CheckBox</type>
+    <type>int</type>
     <html>
       <type>CheckBox</type>
     </html>
@@ -71,9 +70,9 @@
   </pseudoconstant>
 
   <field>
-    <name>type</name>
+    <name>type_id</name>
     <title>Type</title>
-    <type>Select</type>
+    <type>int</type>
     <html>
       <type>Select</type>
     </html>
@@ -87,7 +86,7 @@
   <field>
     <name>duration</name>
     <title>Duration</title>
-    <type>Integer</type>
+    <type>int</type>
     <html>
       <type>Integer</type>
     </html>
@@ -97,7 +96,7 @@
   <field>
     <name>notes</name>
     <title>Notes</title>
-    <type>TextArea</type>
+    <type>longtext</type>
     <html>
       <type>Text</type>
     </html>
@@ -107,7 +106,7 @@
   <field>
     <name>file</name>
     <title>File</title>
-    <type>File</type>
+    <type>text</type>
     <html>
       <type>File</type>
     </html>

@@ -1,16 +1,16 @@
 <?xml version="1.0"?>
 <extension key="presentation" type="module">
   <file>presentation</file>
-  <name>FIXME</name>
-  <description>FIXME</description>
+  <name>Presentation Entity</name>
+  <description>Custom entity for presenations</description>
   <license>AGPL-3.0</license>
   <maintainer>
     <author>Brienne Kordis</author>
   </maintainer>
   <urls>
-    <url desc="Main Extension Page">http://FIXME</url>
-    <url desc="Documentation">http://FIXME</url>
-    <url desc="Support">http://FIXME</url>
+    <url desc="Main Extension Page">https://github.com/briennekordis/presentationEntity</url>
+    <url desc="Documentation">https://github.com/briennekordis/presentationEntity</url>
+    <url desc="Support">https://github.com/briennekordis/presentationEntity</url>
     <url desc="Licensing">http://www.gnu.org/licenses/agpl-3.0.html</url>
   </urls>
   <releaseDate>2022-09-12</releaseDate>
@@ -19,7 +19,7 @@
   <compatibility>
     <ver>5.0</ver>
   </compatibility>
-  <comments>This is a new, undeveloped module</comments>
+  <comments></comments>
   <classloader>
     <psr4 prefix="Civi\" path="Civi"/>
   </classloader>
