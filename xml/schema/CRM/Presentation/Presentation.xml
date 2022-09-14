@@ -121,14 +121,4 @@
     <comment>Additional Notes</comment>
   </field>
 
-  <field>
-    <name>file</name>
-    <title>File</title>
-    <type>blob</type>
-    <html>
-      <type>File</type>
-    </html>
-    <comment>Presentation file</comment>
-  </field>
-
 </table>
