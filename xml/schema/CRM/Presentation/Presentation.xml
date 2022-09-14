@@ -31,7 +31,6 @@
     <comment>Topic of presentation</comment>
     <pseudoconstant>
       <optionGroupName>pres_topic</optionGroupName>
-      <keyColumn>label</keyColumn>
     </pseudoconstant>
   </field>
   <index>
@@ -78,7 +77,6 @@
     <comment>Target audience of original presentation</comment>
     <pseudoconstant>
       <optionGroupName>pres_audience</optionGroupName>
-      <keyColumn>label</keyColumn>  
     </pseudoconstant>
   </field>
   <index>
@@ -96,7 +94,6 @@
     <comment>Format of original presentation</comment>
     <pseudoconstant>
       <optionGroupName>pres_type</optionGroupName>
-      <keyColumn>label</keyColumn>
     </pseudoconstant>
   </field>
   <index>
