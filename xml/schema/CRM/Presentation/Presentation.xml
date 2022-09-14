@@ -24,32 +24,33 @@
   <field>
     <name>topic_id</name>
     <title>Topic</title>
-    <type>int</type>
+    <type>int unsigned</type>
     <html>
       <type>CheckBox</type>
     </html>
     <comment>Topic of presentation</comment>
+    <pseudoconstant>
+      <optionGroupName>pres_topic</optionGroupName>
+      <keyColumn>label</keyColumn>
+    </pseudoconstant>
   </field>
   <index>
-    <name>index_topic_type</name>
+    <name>index_topic_id</name>
     <fieldname>topic_id</fieldname>
   </index>
-  <pseudoconstant>
-    <optionGroupName>pres_topic</optionGroupName>
-    <keyColumn>label</keyColumn>
-  </pseudoconstant>
 
   <field>
     <name>title</name>
     <title>Title</title>
-    <type>text</type>
+    <type>varchar</type>
+    <length>255</length>
     <html>
       <type>Text</type>
     </html>
     <comment>Title of presentation</comment>
   </field>
   <index>
-    <name>index_title_name</name>
+    <name>index_title</name>
     <fieldname>title</fieldname>
   </index>
 
@@ -70,38 +71,38 @@
   <field>
     <name>audience_id</name>
     <title>Audience</title>
-    <type>int</type>
+    <type>int unsigned</type>
     <html>
       <type>CheckBox</type>
     </html>
     <comment>Target audience of original presentation</comment>
+    <pseudoconstant>
+      <optionGroupName>pres_audience</optionGroupName>
+      <keyColumn>label</keyColumn>  
+    </pseudoconstant>
   </field>
   <index>
-    <name>index_audience_type</name>
+    <name>index_audience_id</name>
     <fieldname>audience_id</fieldname>
   </index>
-  <pseudoconstant>
-    <optionGroupName>pres_audience</optionGroupName>
-    <keyColumn>label</keyColumn>  
-  </pseudoconstant>
 
   <field>
     <name>type_id</name>
     <title>Type</title>
-    <type>int</type>
+    <type>int unsigned</type>
     <html>
       <type>Select</type>
     </html>
     <comment>Format of original presentation</comment>
+    <pseudoconstant>
+      <optionGroupName>pres_type</optionGroupName>
+      <keyColumn>label</keyColumn>
+    </pseudoconstant>
   </field>
   <index>
-    <name>index_type_name</name>
+    <name>index_type_id</name>
     <fieldname>type_id</fieldname>
   </index>
-  <pseudoconstant>
-    <optionGroupName>pres_type</optionGroupName>
-    <keyColumn>label</keyColumn>
-  </pseudoconstant>
 
   <field>
     <name>duration</name>
@@ -126,7 +127,7 @@
   <field>
     <name>file</name>
     <title>File</title>
-    <type>text</type>
+    <type>blob</type>
     <html>
       <type>File</type>
     </html>
