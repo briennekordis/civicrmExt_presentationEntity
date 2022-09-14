@@ -30,6 +30,10 @@
     </html>
     <comment>Topic of presentation</comment>
   </field>
+  <index>
+    <name>index_topic_type</name>
+    <fieldname>topic_id</fieldname>
+  </index>
   <pseudoconstant>
     <optionGroupName>pres_topic</optionGroupName>
     <keyColumn>label</keyColumn>
@@ -44,6 +48,10 @@
     </html>
     <comment>Title of presentation</comment>
   </field>
+  <index>
+    <name>index_title_name</name>
+    <fieldname>title</fieldname>
+  </index>
 
   <field>
     <name>date</name>
@@ -54,6 +62,10 @@
     </html>
     <comment>Date of original presentation</comment>
   </field>
+  <index>
+    <name>index_date</name>
+    <fieldname>date</fieldname>
+  </index>
 
   <field>
     <name>audience_id</name>
@@ -64,6 +76,10 @@
     </html>
     <comment>Target audience of original presentation</comment>
   </field>
+  <index>
+    <name>index_audience_type</name>
+    <fieldname>audience_id</fieldname>
+  </index>
   <pseudoconstant>
     <optionGroupName>pres_audience</optionGroupName>
     <keyColumn>label</keyColumn>  
@@ -78,6 +94,10 @@
     </html>
     <comment>Format of original presentation</comment>
   </field>
+  <index>
+    <name>index_type_name</name>
+    <fieldname>type_id</fieldname>
+  </index>
   <pseudoconstant>
     <optionGroupName>pres_type</optionGroupName>
     <keyColumn>label</keyColumn>
