@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="iso-8859-1" ?>
+
+<table>
+  <base>CRM/Presentation</base>
+  <class>Presentation</class>
+  <name>civicrm_presentation</name>
+  <comment>Presentation Custom Entity</comment>
+  <log>true</log>
+
+  <field>
+    <name>id</name>
+    <type>int unsigned</type>
+    <required>true</required>
+    <comment>Unique Presentation ID</comment>
+    <html>
+      <type>Number</type>
+    </html>
+  </field>
+  <primaryKey>
+    <name>id</name>
+    <autoincrement>true</autoincrement>
+  </primaryKey>
+
+  <field>
+    <name>topic_id</name>
+    <title>Topic</title>
+    <type>CheckBox</type>
+    <html>
+      <type>CheckBox</type>
+    </html>
+    <comment>Topic of presentation</comment>
+  </field>
+  <pseudoconstant>
+    <optionGroupName>pres_topic</optionGroupName>
+    <keyColumn>label</keyColumn>
+  </pseudoconstant>
+
+  <field>
+    <name>title</name>
+    <title>Title</title>
+    <type>Text</type>
+    <html>
+      <type>Text</type>
+    </html>
+    <comment>Title of presentation</comment>
+  </field>
+
+  <field>
+    <name>date</name>
+    <title>Presentation date</title>
+    <type>Select Date</type>
+    <formatType>activityDate</formatType>
+    <html>
+      <type>Select Date</type>
+    </html>
+    <comment>Date of original presentation</comment>
+  </field>
+
+  <field>
+    <name>audience_id</name>
+    <title>Audience</title>
+    <type>CheckBox</type>
+    <html>
+      <type>CheckBox</type>
+    </html>
+    <comment>Target audience of original presentation</comment>
+  </field>
+  <pseudoconstant>
+    <optionGroupName>pres_audience</optionGroupName>
+    <keyColumn>label</keyColumn>  
+  </pseudoconstant>
+
+  <field>
+    <name>type</name>
+    <title>Type</title>
+    <type>Select</type>
+    <html>
+      <type>Select</type>
+    </html>
+    <comment>Format of original presentation</comment>
+  </field>
+  <pseudoconstant>
+    <optionGroupName>pres_type</optionGroupName>
+    <keyColumn>label</keyColumn>
+  </pseudoconstant>
+
+  <field>
+    <name>duration</name>
+    <title>Duration</title>
+    <type>Integer</type>
+    <html>
+      <type>Integer</type>
+    </html>
+    <comment>Length of original presentation in minutes</comment>
+  </field>
+
+  <field>
+    <name>notes</name>
+    <title>Notes</title>
+    <type>TextArea</type>
+    <html>
+      <type>Text</type>
+    </html>
+    <comment>Additional Notes</comment>
+  </field>
+
+  <field>
+    <name>file</name>
+    <title>File</title>
+    <type>File</type>
+    <html>
+      <type>File</type>
+    </html>
+    <comment>Presentation file</comment>
+  </field>
+
+</table>
