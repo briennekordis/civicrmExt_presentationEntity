@@ -25,6 +25,10 @@
     <name>contact_id</name>
     <type>int unsigned</type>
     <comment>FK to Contact</comment>
+    <html>
+      <type>EntityRef</type>
+      <label>Author</label>
+    </html>
   </field>
   <foreignKey>
     <name>contact_id</name>
@@ -37,6 +41,15 @@
     <name>presentation_id</name>
     <type>int unsigned</type>
     <comment>FK to Presentation</comment>
+    <html>
+      <type>EntityRef</type>
+      <label>Presentation</label>
+    </html>
+    <pseudoconstant>
+      <table>civicrm_presentation</table>
+      <keyColumn>id</keyColumn>
+      <labelColumn>title</labelColumn>
+    </pseudoconstant>
   </field>
   <foreignKey>
     <name>id</name>

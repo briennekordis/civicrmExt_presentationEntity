@@ -17,6 +17,7 @@
 
 SET FOREIGN_KEY_CHECKS=0;
 
+DROP TABLE IF EXISTS `civicrm_presentation_author`;
 DROP TABLE IF EXISTS `civicrm_presentation`;
 
 SET FOREIGN_KEY_CHECKS=1;
@@ -42,12 +43,26 @@ CREATE TABLE `civicrm_presentation` (
   `type_id` int unsigned COMMENT 'Format of original presentation',
   `duration` int COMMENT 'Length of original presentation in minutes',
   `notes` longtext COMMENT 'Additional Notes',
-  `file` blob COMMENT 'Presentation file',
   PRIMARY KEY (`id`),
   INDEX `index_topic_id`(topic_id),
   INDEX `index_title`(title),
   INDEX `index_date`(date),
   INDEX `index_audience_id`(audience_id),
   INDEX `index_type_id`(type_id)
+)
+ENGINE=InnoDB;
+
+-- /*******************************************************
+-- *
+-- * civicrm_presentation_author
+-- *
+-- *******************************************************/
+CREATE TABLE `civicrm_presentation_author` (
+  `id` int unsigned NOT NULL AUTO_INCREMENT COMMENT 'Unique PresentationAuthor ID',
+  `contact_id` int unsigned COMMENT 'FK to Contact',
+  `presentation_id` int unsigned COMMENT 'FK to Presentation',
+  PRIMARY KEY (`id`),
+  CONSTRAINT FK_civicrm_presentation_author_contact_id FOREIGN KEY (`contact_id`) REFERENCES `civicrm_contact`(`id`) ON DELETE CASCADE,
+  CONSTRAINT FK_civicrm_presentation_author_id FOREIGN KEY (`id`) REFERENCES `civicrm_presentation`(`id`) ON DELETE CASCADE
 )
 ENGINE=InnoDB;

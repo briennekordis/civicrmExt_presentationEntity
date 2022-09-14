@@ -15,6 +15,7 @@
 
 SET FOREIGN_KEY_CHECKS=0;
 
+DROP TABLE IF EXISTS `civicrm_presentation_author`;
 DROP TABLE IF EXISTS `civicrm_presentation`;
 
 SET FOREIGN_KEY_CHECKS=1;

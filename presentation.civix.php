@@ -310,5 +310,10 @@ function _presentation_civix_civicrm_entityTypes(&$entityTypes) {
       'class' => 'CRM_Presentation_DAO_Presentation',
       'table' => 'civicrm_presentation',
     ],
+    'CRM_PresentationAuthor_DAO_PresentationAuthor' => [
+      'name' => 'PresentationAuthor',
+      'class' => 'CRM_PresentationAuthor_DAO_PresentationAuthor',
+      'table' => 'civicrm_presentation_author',
+    ],
   ]);
 }
