@@ -36,7 +36,7 @@
   </field>
   <index>
     <name>index_topic_id</name>
-    <fieldname>topic_id</fieldname>
+    <fieldName>topic_id</fieldName>
   </index>
 
   <field>
@@ -51,7 +51,7 @@
   </field>
   <index>
     <name>index_title</name>
-    <fieldname>title</fieldname>
+    <fieldName>title</fieldName>
   </index>
 
   <field>
@@ -65,7 +65,7 @@
   </field>
   <index>
     <name>index_date</name>
-    <fieldname>date</fieldname>
+    <fieldName>date</fieldName>
   </index>
 
   <field>
@@ -83,7 +83,7 @@
   </field>
   <index>
     <name>index_audience_id</name>
-    <fieldname>audience_id</fieldname>
+    <fieldName>audience_id</fieldName>
   </index>
 
   <field>
@@ -101,7 +101,7 @@
   </field>
   <index>
     <name>index_type_id</name>
-    <fieldname>type_id</fieldname>
+    <fieldName>type_id</fieldName>
   </index>
 
   <field>
