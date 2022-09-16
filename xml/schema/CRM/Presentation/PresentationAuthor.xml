@@ -52,7 +52,7 @@
     </pseudoconstant>
   </field>
   <foreignKey>
-    <name>id</name>
+    <name>presentation_id</name>
     <table>civicrm_presentation</table>
     <key>id</key>
     <onDelete>CASCADE</onDelete>

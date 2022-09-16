@@ -63,6 +63,6 @@ CREATE TABLE `civicrm_presentation_author` (
   `presentation_id` int unsigned COMMENT 'FK to Presentation',
   PRIMARY KEY (`id`),
   CONSTRAINT FK_civicrm_presentation_author_contact_id FOREIGN KEY (`contact_id`) REFERENCES `civicrm_contact`(`id`) ON DELETE CASCADE,
-  CONSTRAINT FK_civicrm_presentation_author_id FOREIGN KEY (`id`) REFERENCES `civicrm_presentation`(`id`) ON DELETE CASCADE
+  CONSTRAINT FK_civicrm_presentation_author_presentation_id FOREIGN KEY (`presentation_id`) REFERENCES `civicrm_presentation`(`id`) ON DELETE CASCADE
 )
 ENGINE=InnoDB;
