@@ -16,12 +16,18 @@ trait PresentationSaveTrait {
 
   protected function write(array $items) {
     $result = parent::write($items);
+    $contacts = [];
     foreach ($items[0]['author_contact_id'] as $key => $authorId) {
-      \Civi\Api4\PresentationAuthor::create()
-        ->addValue('contact_id', $authorId)
-        ->addValue('presentation_id', $result[0]->id)
-        ->execute();
+      if ($authorId) {
+        $contacts[] = ['contact_id' => $authorId];
+      }
     }
+    \Civi\Api4\PresentationAuthor::save(FALSE)
+      ->setRecords($contacts)
+      ->setDefaults(['presentation_id' => $result[0]->id])
+      ->setMatch(['presentation_id', 'contact_id'])
+      ->execute();
+
     return $result;
   }
 
