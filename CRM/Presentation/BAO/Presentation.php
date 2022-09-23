@@ -1,7 +1,9 @@
 <?php
+
 use CRM_Presentation_ExtensionUtil as E;
 
-class CRM_Presentation_BAO_Presentation extends CRM_Presentation_DAO_Presentation {
+class CRM_Presentation_BAO_Presentation extends CRM_Presentation_DAO_Presentation
+{
 
   /**
    * Create a new Presentation based on array-data
@@ -9,7 +11,9 @@ class CRM_Presentation_BAO_Presentation extends CRM_Presentation_DAO_Presentatio
    * @param array $params key-value pairs
    * @return CRM_Presentation_DAO_Presentation|NULL
    *
-  public static function create($params) {
+   */
+  public static function create($params)
+  {
     $className = 'CRM_Presentation_DAO_Presentation';
     $entityName = 'Presentation';
     $hook = empty($params['id']) ? 'create' : 'edit';
@@ -21,6 +25,5 @@ class CRM_Presentation_BAO_Presentation extends CRM_Presentation_DAO_Presentatio
     CRM_Utils_Hook::post($hook, $entityName, $instance->id, $instance);
 
     return $instance;
-  } */
-
+  }
 }
