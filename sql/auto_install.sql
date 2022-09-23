@@ -36,12 +36,12 @@ SET FOREIGN_KEY_CHECKS=1;
 -- *******************************************************/
 CREATE TABLE `civicrm_presentation` (
   `id` int unsigned NOT NULL AUTO_INCREMENT COMMENT 'Unique Presentation ID',
-  `topic_id` int unsigned COMMENT 'Topic of presentation',
+  `topic_id` varchar(255) COMMENT 'Topic of presentation',
   `title` varchar(255) COMMENT 'Title of presentation',
   `date` date COMMENT 'Date of original presentation',
-  `audience_id` int unsigned COMMENT 'Target audience of original presentation',
-  `type_id` int unsigned COMMENT 'Format of original presentation',
-  `duration` int COMMENT 'Length of original presentation in minutes',
+  `audience_id` varchar(255) COMMENT 'Target audience of original presentation',
+  `type_id` varchar(255) COMMENT 'Format of original presentation',
+  `duration` int unsigned COMMENT 'Length of original presentation in minutes',
   `notes` longtext COMMENT 'Additional Notes',
   PRIMARY KEY (`id`),
   INDEX `index_topic_id`(topic_id),
