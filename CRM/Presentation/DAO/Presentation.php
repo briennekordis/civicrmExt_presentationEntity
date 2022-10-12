@@ -196,6 +196,7 @@ class CRM_Presentation_DAO_Presentation extends CRM_Core_DAO {
           'localizable' => 0,
           'html' => [
             'type' => 'Select Date',
+            'formatType' => 'activityDate',
           ],
           'add' => NULL,
         ],
