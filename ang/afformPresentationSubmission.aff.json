@@ -1,0 +1,18 @@
+{
+    "type": "form",
+    "requires": [],
+    "entity_type": null,
+    "join_entity": null,
+    "title": "Presentation Submission",
+    "description": "Submit presentations to resource library",
+    "is_dashlet": false,
+    "is_public": false,
+    "is_token": false,
+    "contact_summary": null,
+    "icon": "fa-list-alt",
+    "server_route": "civicrm/submitpresentation",
+    "permission": "access CiviCRM",
+    "redirect": null,
+    "create_submission": true,
+    "navigation": null
+}

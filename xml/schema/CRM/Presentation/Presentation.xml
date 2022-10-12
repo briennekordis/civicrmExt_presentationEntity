@@ -27,7 +27,7 @@
     <type>varchar</type>
     <length>255</length>
     <html>
-      <type>Select</type>
+      <type>CheckBox</type>
       <multiple>1</multiple>
     </html>
     <serialize>JSON</serialize>
@@ -62,6 +62,7 @@
     <type>date</type>
     <html>
       <type>Select Date</type>
+      <format>activityDate</format>
     </html>
     <comment>Date of original presentation</comment>
   </field>
