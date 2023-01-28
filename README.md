@@ -1,15 +1,16 @@
-# presentation
+## Project Name
+Presentation Entity
 
-![Screenshot](/images/screenshot.png)
+## Overview
 
-(*FIXME: In one or two paragraphs, describe what the extension does and why one would download it. *)
+This CiviCRM extension creates two custom entities, Presentation and Presentation Author, with APIv4 support so that they can be used in SearchKit and FormBuilder. These entities make it possible to store and display information about presentations, such as papers and slideshows, uploaded by users.
 
 The extension is licensed under [AGPL-3.0](LICENSE.txt).
 
 ## Requirements
 
 * PHP v7.2+
-* CiviCRM (*FIXME: Version number*)
+* Yested on CiviCRM 5.51
 
 ## Installation (Web UI)
 
@@ -34,11 +35,3 @@ install it with the command-line tool [cv](https://github.com/civicrm/cv).
 git clone https://github.com/FIXME/presentation.git
 cv en presentation
 ```
-
-## Getting Started
-
-(* FIXME: Where would a new user navigate to get started? What changes would they see? *)
-
-## Known Issues
-
-(* FIXME *)
